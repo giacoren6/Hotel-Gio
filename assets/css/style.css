@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+li a {
+    font-style: italic;
+    text-decoration: none;
+    color: goldenrod;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+li a:hover{
+    color: #fff;
+}
+
+
+nav{
+    border: solid 1px #000;
+    background-color: rgba(139, 0, 0, 0.71);
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+    margin-top: 50px;
+}
+
+div.my-hotel{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px 0;
+}
+
+#title{
+    text-align: center;
+    font-size: 40px;
+    color: goldenrod;
+    margin-top: 50px;
+}
+
+#italic{
+    font-style: italic;
+    color: goldenrod;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 4px;
+}
