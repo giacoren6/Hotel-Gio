@@ -117,10 +117,87 @@ div.my-hotel {
     justify-content: center;
 }
 
+.rooms{
+    text-align: center;
+    font-size: 40px;
+    color: goldenrod;
+    margin-top: 50px;
+    column-count: 1;
+    columns: 2;
+}
+
 #room1{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
     opacity: 0.8;
     border-radius: 50%;
+    border: solid 3px goldenrod;
+
+}
+
+#room2{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px goldenrod;
+}
+
+#room3{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px goldenrod;
+}
+
+#room4{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px goldenrod;
+}
+
+#room5{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px goldenrod;
+}
+
+#room6{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px goldenrod;
+}
+
+#price{
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 50px;
+}
+
+#book{
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 50px;
+    background-color: white;
+
+
+}
+
+h4{
+    font-size: 40px;
+    color: goldenrod;
+    margin-top: 50px;
 }
