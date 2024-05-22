@@ -66,10 +66,3 @@ button.addEventListener("mouseleave", () => {
     button.style.color = "white";
     button.style.transform = "scale(1)";
 });
-
-
-
-
-
-
-

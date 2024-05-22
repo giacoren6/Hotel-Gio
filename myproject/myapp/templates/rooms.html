@@ -1,10 +1,11 @@
+{% load static %} <!-- Load static tag -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
     <title>Hotel Luxury</title>
 </head>
 
@@ -15,58 +16,60 @@
                 <ul>
                     <li><a href="index.html">Luxury</a></li>
                     <li><a href="rooms.html">Rooms</a></li>
+                    <li><img src="{% static 'myapp/search.jpeg' %}" alt="search" width="20px" height="20px"></li> <!-- Use Django static tag -->
+
                 </ul>
             </nav>
         </div>
     </header>
     <div class="video-container">
         <video autoplay loop muted id="video-woman">
-            <source src="assets/video/suite.mp4" type="video/mp4" id="video-woman">
+            <source src="{% static 'myapp/suite.mp4' %}" type="video/mp4" id="video-woman"> <!-- Use Django static tag -->
         </video>
     </div>
     </div>
     <div id="icon">
-        <img src="assets/images/Hotel.jpeg" alt="Hotel Gio Luxury" id="my-icon">
+        <img src="{% static 'Hotel.jpeg' %}" alt="Hotel Gio Luxury" id="my-icon"> <!-- Use Django static tag -->
         <h3>Rooms</h3>
         <p id="ita">Brand By Hotel Gio Luxury best rooms at cheap price</p>
         <div class="rooms">
             <div class="room">
-                <img src="assets/images/room1.jpeg" alt="Room 1" id="room1">
+                <img src="{% static 'myapp/room1.jpeg' %}" alt="Room 1" id="room1"> <!-- Use Django static tag -->
                 <h4>Single Room</h4>
                 <p id="ita">Single bed, TV, AC, Wi-Fi, Bathroom</p>
                 <p id="price">$100 per night</p>
                 <button id="book">Book Now</button>
             </div>
             <div class="room">
-                <img src="assets/images/room2.jpeg" alt="Room 2" id="room2">
+                <img src="{% static 'myapp/room2.jpeg' %}" alt="Room 2" id="room2"> <!-- Use Django static tag -->
                 <h4>Double Room</h4>
                 <p id="ita">Double bed, TV, AC, Wi-Fi, Bathroom</p>
                 <p id="price">$150 per night</p>
                 <button id="book">Book Now</button>
             </div>
             <div class="room">
-                <img src="assets/images/room3.jpeg" alt="Room 3" id="room3">
+                <img src="{% static 'myapp/room3.jpeg' %}" alt="Room 3" id="room3"> <!-- Use Django static tag -->
                 <h4>Suite Room</h4>
                 <p id="ita">King bed, TV, AC, Wi-Fi, Bathroom, Living Room</p>
                 <p id="price">$200 per night</p>
                 <button id="book">Book Now</button>
             </div>
             <div class="room">
-                <img src="assets/images/room4.jpeg" alt="Room 4" id="room4">
+                <img src="{% static 'myapp/room4.jpeg' %}" alt="Room 4" id="room4"> <!-- Use Django static tag -->
                 <h4>Presidential Suite</h4>
                 <p id="ita">King bed, TV, AC, Wi-Fi, Bathroom, Living Room, Dining Room, Kitchen</p>
                 <p id="price">$300 per night</p>
                 <button id="book">Book Now</button>
             </div>
             <div class="room">
-                <img src="assets/images/room5.jpeg" alt="Room 5" id="room5">
+                <img src="{% static 'myapp/room5.jpeg' %}" alt="Room 5" id="room5"> <!-- Use Django static tag -->
                 <h4>Family Room</h4>
                 <p id="ita">King bed, TV, AC, Wi-Fi, Bathroom, Living Room, Dining Room, Kitchen</p>
                 <p id="price">$250 per night</p>
                 <button id="book">Book Now</button>
             </div>
             <div class="room">
-                <img src="assets/images/room6.jpeg" alt="Room 6" id="room6">
+                <img src="{% static 'myapp/room6.jpeg' %}" alt="Room 6" id="room6"> <!-- Use Django static tag -->
                 <h4>Deluxe Room</h4>
                 <p id="ita">King bed, TV, AC, Wi-Fi, Bathroom, Living Room, Dining Room, Kitchen</p>
                 <p id="price">$250 per night</p>
@@ -96,7 +99,7 @@
     </footer>
 
 
-    <script src="assets/js/script.js"></script>
+    <script src="{% static 'myapp/script.js' %}"></script> <!-- Use Django static tag -->
     <script src="https://kit.fontawesome.com/c37d03c9b1.js" crossorigin="anonymous"></script>
 </body>
 
