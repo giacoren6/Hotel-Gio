@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "myapp.apps.MyappConfig",
+    
 ]
 
 MIDDLEWARE = [
@@ -126,5 +127,4 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-
-
+LOGIN_URL = 'login'

@@ -16,6 +16,8 @@
                 <ul>
                     <li><a href="{% url 'index' %}">Luxury</a></li>
                     <li><a href="{% url 'rooms' %}">Rooms</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
                     <li><img src="{% static 'myapp/search.jpeg' %}" alt="search" width="20px" height="20px"></li>
                 </ul>
             </nav>
@@ -47,14 +49,16 @@
                 <h4>Single Room</h4>
                 <p id="ita">Single bed, TV, AC, Wi-Fi, Bathroom</p>
                 <p id="price">$100 per night</p>
-                <button id="book">Book Now</button>
+                <a href="{% url 'book' %}"><button id="book" type="submit">Book Now</button></a> <!-- Add link to 'book' page -->
+
             </div>
             <div class="room">
                 <img src="{% static 'myapp/room2.jpeg' %}" alt="Room 2" id="room2">
                 <h4>Double Room</h4>
                 <p id="ita">Double bed, TV, AC, Wi-Fi, Bathroom</p>
                 <p id="price">$150 per night</p>
-                <button id="book">Book Now</button>
+                <a href="{% url 'book' %}"><button id="book">Book Now</button></a> <!-- Add link to 'book' page -->
+
             </div>
         </div>
         <footer>
