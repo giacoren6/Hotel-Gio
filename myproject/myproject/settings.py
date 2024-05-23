@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-z5v05i9!+=vgmao868uu4(-jg!c7u2k867t%s*1*@@g&$wf-s!"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['myproject-heroku-1.herokuapp.com']
-
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -126,5 +125,3 @@ STATIC_URL = "/static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-import dj_database_url 
-DATABASES['default'] = dj_database_url.config()
