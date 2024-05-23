@@ -1,12 +1,17 @@
 <!-- FILEPATH: /workspaces/Hotel-Gio/myproject/myapp/templates/book.html -->
-
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
     <title>Booking</title>
 </head>
-<body>
-    <h1>Booking</h1>
+
+<body id="book-room">
+    <h1 id="book-room">Booking</h1>
     <form method="POST" action="{% url 'book_done' %}">
         {% csrf_token %}
         <label for="name">Name:</label>
@@ -19,8 +24,9 @@
         <input type="date" id="checkout" name="checkout" required><br><br>
         <input type="submit" value="Book">
     </form>
-    <a href="{% url 'rooms' %}">Cancel</a>
-    <a href="{% url 'rooms' %}">Back to Rooms</a>
-    <a href="{% url 'index' %}">Back to Home</a>
+    <a href="{% url 'rooms' %}" id="book_button">Cancel</a>
+    <a href="{% url 'rooms' %}"id="book_button">Back to Rooms</a>
+    <a href="{% url 'index' %}"id="book_button">Back to Home</a>
 </body>
+
 </html>

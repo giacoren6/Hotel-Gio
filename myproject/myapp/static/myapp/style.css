@@ -257,3 +257,30 @@ h4{
     margin-right: 50px;
 }
 
+#book-room{
+    font-size: 20px;
+    color: goldenrod;
+    background-color:white;
+    font-style: italic;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#book_button{
+    font-size: 20px;
+    color: goldenrod;
+    background-color: white;
+    font-style: italic;
+    margin: 10px;
+    list-style: none;
+    border: solid 1px goldenrod;
+}
+
+#book_button:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
