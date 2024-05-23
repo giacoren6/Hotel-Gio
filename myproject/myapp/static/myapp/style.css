@@ -276,7 +276,8 @@ h4{
     font-style: italic;
     margin: 10px;
     list-style: none;
-    border: solid 1px goldenrod;
+    display: flex;
+    justify-content: center;
 }
 
 #book_button:hover{

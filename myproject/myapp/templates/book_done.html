@@ -1,15 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
     <title>Book Done</title>
 </head>
 <body>
-    <h1>Booking Successful</h1>
-    <p>Thank you for booking with us!</p>
+    <h1 id="book-room">Successful</h1>
+    <p id="book-room">Thank you for booking with us!</p>
 
-    <a href="{% url 'rooms' %}">Back to Rooms</a>
-    <a href="{% url 'index' %}">Back to Home</a>
-    <a href="{% url 'book' %}">Book Another Room</a>
+    <a href="{% url 'rooms' %}" id="book_button">Back to Rooms</a>
+    <a href="{% url 'index' %}"id="book_button">Back to Home</a>
 
     
 

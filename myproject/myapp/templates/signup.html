@@ -1,11 +1,17 @@
-<!-- FILEPATH: /workspaces/Hotel-Gio/myproject/myapp/templates/signup.html -->
+{% load static %}
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+    <title>Sign Up</title>
 {% block content %}
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign up</button>
+    <button type="submit" id="book_button">Sign up</button>
 </form>
 
-<p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+<p>have an account?<a href="{% url 'login' %}" id="book_button">Login</a></p>
 {% endblock %}
