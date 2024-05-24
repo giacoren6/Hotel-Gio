@@ -26,7 +26,7 @@ We look forward to welcoming you to Hotel Gio and providing you with an unparall
 
 - Phone: +1 123-456-7890
 - Email: info@hotelgio.com
-- Website: [https://hotel-gio-d31dbec71f63.herokuapp.com](https://www.hotelgio.com)
+- Website: [https://hotel-gio-d31dbec71f63.herokuapp.com](https://hotel-gio-d31dbec71f63.herokuapp.com)
 
 Follow us on social media for updates and special offers:
 
