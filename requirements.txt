@@ -166,4 +166,3 @@ websocket-client==1.7.0
 Werkzeug==3.0.3
 whitenoise==6.6.0
 wrapt==1.16.0
-
