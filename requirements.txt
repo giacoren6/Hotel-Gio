@@ -1,8 +1,2 @@
-import gzip
+tar -czf requirements.tar.gz -C /workspaces/Hotel-Gio/requirements.txt
 
-input_file = '/workspaces/Hotel-Gio/requirements.txt'
-output_file = '/workspaces/Hotel-Gio/requirements.txt.gz'
-
-with open(input_file, 'rb') as f_in:
-    with gzip.open(output_file, 'wb') as f_out:
-        f_out.writelines(f_in)
