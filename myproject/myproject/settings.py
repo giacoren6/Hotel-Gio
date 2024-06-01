@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-z5v05i9!+=vgmao868uu4(-jg!c7u2k867t%s*1*@@g&$wf-s!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+Allowed Hosts = [“heroku.domain”]
 
 
 
@@ -54,6 +54,7 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 
@@ -129,9 +130,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-django_heroku.settings(locals())
-
-DISABLE_COLLECTSTATIC=1
+root:STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
