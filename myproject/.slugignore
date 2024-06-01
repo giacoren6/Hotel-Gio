@@ -1,17 +1,4 @@
-# Ignore all files and directories starting with a dot
-.*
-
-# Ignore specific files
-README.md
-LICENSE
-
-# Ignore directories
+*.log
+test/
 node_modules/
-dist/
-
-# Ignore large files
-*.mp4
-*.avi
-*.mov
-# Add more file extensions as needed
-*.jpeg
+__pycache__/
