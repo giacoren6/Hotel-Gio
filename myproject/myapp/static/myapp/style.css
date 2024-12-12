@@ -270,18 +270,120 @@ h4{
 }
 
 #book_button{
-    font-size: 20px;
-    color: goldenrod;
-    background-color: white;
+    font-size: 23px;
     font-style: italic;
     margin: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px goldenrod;
+    border-radius: 5%;
+    background-color: white;
+    color: goldenrod;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 #book_button:hover{
-    background-color: goldenrod;
-    color: white;
+    background-color: rgb(206, 206, 206);
+    color: black;
 }
 
+#login-now {
+    color : goldenrod;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+
+
+.image-login {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+
+}
+
+#login{
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px goldenrod;
+    border-radius: 5%;
+
+}
+
+#button_login{
+    font-size: 21px;
+    font-style: italic;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px goldenrod;
+    border-radius: 5%;
+    background-color: black;
+    color: goldenrod;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#button_login:hover{
+    background-color: rgb(255, 253, 253);
+    color: goldenrod
+}
+
+#login2 {
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px goldenrod;
+    border-radius: 5%;
+}
+
+#button_signin{
+    font-size: 21px;
+    font-style: italic;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px goldenrod;
+    border-radius: 5%;
+    background-color: black;
+    color: goldenrod;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#post{
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px goldenrod;
+    background-color: black;
+}

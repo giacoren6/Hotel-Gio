@@ -1,6 +1,11 @@
 const images = document.querySelectorAll("#icon img");
 console.log(images);
 
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".Book");
+});
+
+
 images.forEach((image) => {
     image.addEventListener("mouseenter", () =>{
         image.style.transform = "scale(1.5)";
@@ -15,6 +20,9 @@ images.forEach((image) => {
 
 });
 
+image.addEventListener('click', () => {
+    window.location.href = 'http://127.0.0.1:8000/book/';
+})
 
 const image = document.querySelector("#hotel-gio");
 image.addEventListener("mouseenter", () =>{
@@ -66,3 +74,13 @@ button.addEventListener("mouseleave", () => {
     button.style.color = "white";
     button.style.transform = "scale(1)";
 });
+
+const nav = document.querySelector("nav");
+nav.style.backgroundColor = "black";
+nav.style.color = "white";
+nav.style.display = "flex";
+nav.style.justifyContent = "space-between";
+nav.style.padding = "20px";
+nav.style.position = "fixed";
+nav.style.width = "100%";
+nav.style.zIndex = "1000";

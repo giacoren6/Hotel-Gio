@@ -50,7 +50,7 @@ def book(request):
 
 from django.shortcuts import render, redirect
 
-# ... your other views ...
+
 
 def signup_view(request):
     if request.method == 'POST':

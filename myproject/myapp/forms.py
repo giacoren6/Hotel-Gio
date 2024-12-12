@@ -5,3 +5,7 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = ['room_type', 'check_in', 'check_out', 'guest_name', 'guest_email']
+
+    
+
+    

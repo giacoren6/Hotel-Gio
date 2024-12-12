@@ -6,12 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
     <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Luxury</a></li>
+                    <li><a href="{% url 'rooms' %}">Rooms</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="image-login">
+        <img src="{% static 'myapp/signin.jpeg' %}" alt="Sign Up" id="login2">
+    </div>
+
 {% block content %}
-<form method="post">
+<form method="post" id="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" id="book_button">Sign up</button>
+    <button type="submit" id="button_login">Sign up</button>
 </form>
 
-<p>have an account?<a href="{% url 'login' %}" id="book_button">Login</a></p>
+<p>have an account?<a href="{% url 'login' %}" id="button_login">Login</a></p>
 {% endblock %}
+
+<footer>
+    <div class="container">
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p id="ita">Address: 123 Main Street, London, LDN W37BQ</p>
+            <p id="ita">Phone: 7745-4736-39</p>
+            <p id="ita">Email: GioHotel@99.com</p>
+            <p id="ita">Follow Us</p>
+            <ul id="social-media">
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="{% static 'myapp/script.js' %}"></script>
+<script src="https://kit.fontawesome.com/c37d03c9b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

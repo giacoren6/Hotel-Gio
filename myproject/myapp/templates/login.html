@@ -8,15 +8,58 @@
     <title>Login</title>
 </head>
 <body>
-    <h1 id="book-room">Book a Room</h1>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Luxury</a></li>
+                    <li><a href="{% url 'rooms' %}">Rooms</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="image-login">
+       
+        <img src="{% static 'myapp/login2.jpeg' %}" alt="Login" id="login2">
+    </div>
+    <h3 id="login-now">Log in</h3>
     <form method="post" action="{% url 'login_done' %}">
         {% csrf_token %}
         <input type="text" name="username" placeholder="Username" id="book_button">
         <input type="password" name="password" placeholder="Password" id="book_button">
-        <button type="submit" id="book_button">Log in</button>
+        <button type="submit" id="button_login">Log in</button>
+
     </form>
+
     {% if error %}
         <p>{{ error }}</p>
     {% endif %}
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p id="ita">Address: 123 Main Street, London, LDN W37BQ</p>
+                <p id="ita">Phone: 7745-4736-39</p>
+                <p id="ita">Email: GioHotel@99.com</p>
+                <p id="ita">Follow Us</p>
+                <ul id="social-media">
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="{% static 'myapp/script.js' %}"></script>
+<script src="https://kit.fontawesome.com/c37d03c9b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
